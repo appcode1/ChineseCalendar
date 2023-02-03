@@ -26,8 +26,9 @@ function header(lang, page, link) {
                     {title:'Qin &amp; Early Han Calendars', url:'QinHanCalendars.html'}];
         menulist.push(menu);
         
-        menu = {id:'menuMisc', title:'Other<br />Links', 
-               url:'others.html', sub:[]};
+        menu = {id:'menuMisc', title:'Other<br />Links'};
+        menu.sub = [{title:'Miscellaneous', url:'others.html'},
+                    {title:'FAQ', url:'faq.html'}];
         menulist.push(menu);
     } else if (lang==1) {
         // traditional Chinese
@@ -54,7 +55,9 @@ function header(lang, page, link) {
                     {title:'秦至漢初的曆法復原', url:'QinHanCalendars_chinese.html'}];
         menulist.push(menu);
         
-        menu = {id:'menuMisc', title:'其 他', url:'others_chinese.html', sub:[]};
+        menu = {id:'menuMisc', title:'其 他'};
+        menu.sub = [{title:'雜 項', url:'others_chinese.html'},
+                    {title:'常見問題', url:'faq_chinese.html'}];
         menulist.push(menu);
     } else {
         // simplified Chinese
@@ -81,11 +84,14 @@ function header(lang, page, link) {
                     {title:'秦至汉初的历法复原', url:'QinHanCalendars_simp.html'}];
         menulist.push(menu);
         
-        menu = {id:'menuMisc', title:'其 他', url:'others_simp.html', sub:[]};
+        //menu = {id:'menuMisc', title:'其 他', url:'others_simp.html', sub:[]};
+        menu = {id:'menuMisc', title:'其 他'};
+        menu.sub = [{title:'杂项', url:'others_simp.html'},
+                    {title:'常见问题', url:'faq_simp.html'}];
         menulist.push(menu);
     }
     
-    let txt = '';
+    let txt = '<div class="menu">';
     menulist.forEach(add_menu);
     
     function add_menu(x) {
@@ -103,6 +109,7 @@ function header(lang, page, link) {
         }
     }
     
+    txt += '</div>';
     document.getElementById('menu').innerHTML = txt;
     
     if (link != "") {
@@ -155,7 +162,7 @@ function myloadurl(url) {
 
 function add_footer() {
     let foot = document.createElement('FOOTER');
-    let txt = '<hr /><p style="text-align:center;font-size:90%;">&copy; 2018&ndash;2022 Yuk Tung Liu</p>';
+    let txt = '<hr /><p style="text-align:center;font-size:90%;">&copy; 2018&ndash;2023 Yuk Tung Liu</p>';
     foot.innerHTML = txt;
     document.body.appendChild(foot);
 }

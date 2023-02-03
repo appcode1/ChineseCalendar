@@ -46,9 +46,6 @@
 "computation_simp": false,
 "3500Calendars_errors": false,
 "3500Calendars_errors_simp": false,
-"discrepanciesQing": false,
-"discrepanciesQing_chinese": false,
-"discrepanciesQing_simp": false,
 "chunqiu": false,
 "chunqiu_chinese": false,
 "chunqiu_simp": false,
@@ -98,6 +95,9 @@
 "simpleQuiz_simp": false,
 "others": false,
 "others_chinese": false, 
-"others_simp": false
+"others_simp": false,
+"faq": false,
+"faq_chinese": false,
+"faq_simp": false
 }
 

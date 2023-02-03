@@ -212,7 +212,6 @@ async function build() {
            'examples_simp', 'rules_demysterified', 'rules_demysterified_chinese',
            'rules_demysterified_simp', 'computation', 'computation_chinese', 
            'computation_simp', '3500Calendars_errors', '3500Calendars_errors_simp',
-           'discrepanciesQing', 'discrepanciesQing_chinese', 'discrepanciesQing_simp',
            'chunqiu', 'chunqiu_chinese', 'chunqiu_simp',
            'guliuli', 'guliuli_chinese', 'guliuli_simp', 'QinHanCalendars',
            'QinHanCalendars_chinese', 'QinHanCalendars_simp', 'QinHanSolarTerms', 
@@ -228,7 +227,8 @@ async function build() {
            'QingSouthernMingZheng_calendars', 'QingSouthernMingZheng_calendars_chinese', 
            'QingSouthernMingZheng_calendars_simp', 'N1676_Zheng', 'N1676_Zheng_chinese', 
            'N1676_Zheng_simp', 'N1677_Zheng', 'N1677_Zheng_chinese', 'N1677_Zheng_simp', 
-           'N1671_Zheng', 'N1671_Zheng_chinese', 'N1671_Zheng_simp'];
+           'N1671_Zheng', 'N1671_Zheng_chinese', 'N1671_Zheng_simp', 'faq', 'faq_chinese',
+           'faq_simp'];
   files.forEach(async function(f, ind) {
     if (!all && !opt[f]) {
       return;
